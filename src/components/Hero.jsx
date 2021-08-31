@@ -1,10 +1,11 @@
 import React from 'react';
 import playButton from 'assets/play-button.svg';
+import css from 'components/styles/Hero.module.css';
 
 export default function Hero() {
   return (
     <>
-      <div class="container grid">
+      <div className={css.hero}>
         <div class="hero-text">
           <div class="hero-title">
             <h1 class="main-title title">
