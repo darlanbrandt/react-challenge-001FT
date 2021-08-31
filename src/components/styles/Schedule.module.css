@@ -1,0 +1,25 @@
+.schedule {
+  padding: 3.2rem 1.6rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  border-bottom: 1px solid var(--grey-88);
+  align-items: center;
+  text-align: center;
+}
+
+.schedule img {
+  max-width: 100%;
+  height: auto;
+}
+
+.schedule a {
+  font-size: var(--body-text);
+  line-height: 2.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.schedule span {
+  font-size: 1.4rem;
+  color: var(--grey-0);
+}
