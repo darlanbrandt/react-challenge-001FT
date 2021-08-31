@@ -1,0 +1,50 @@
+.section {
+  padding: 6.4rem 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: var(--grey-24);
+}
+
+.container {
+  margin-left: 1.6rem;
+  margin-right: 1.6rem;
+}
+
+.container img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 2.4rem;
+}
+
+.container .text {
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+}
+
+.container .text p {
+  margin-bottom: 2.4rem;
+}
+
+.container .text a {
+  font-weight: 500;
+  color: var(--brand-color-secondary);
+}
+
+.hidden {
+  display: none;
+} 
+
+.sectionTitle {
+  font-size: var(--section-title);
+  font-weight: 500;
+  margin-bottom: 1.6rem;
+}
+
+.divider {
+  height: 1px;
+  background: var(--grey-88);
+  margin: 0 1.6rem;
+}
