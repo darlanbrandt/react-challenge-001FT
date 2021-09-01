@@ -1,0 +1,114 @@
+.footer {
+  padding: 4rem 0 0 0;
+  background-color: var(--white);
+  
+}
+
+.container {
+  margin-left: 1.6rem;
+  margin-right: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.container h3 {
+  font-size: var(--section-title);
+  font-weight: 500;
+  line-height: 3.2rem;
+}
+
+.container p, 
+.container > a {
+  font-size: var(--body-text);
+}
+
+.container p {
+  line-height: 2.8rem;
+}
+
+.container > a {
+  font-weight: 500;
+  line-height: 2.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.button {
+  margin: 2.4rem 1rem;
+  padding: 1rem 2.5rem 1.4rem 2.5rem;
+  display: flex;
+  align-items: center;
+  background-color: var(--brand-color-secondary);
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  color: white;
+  align-self: center;
+}
+
+.button div {
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.button div span:nth-child(1) {
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  text-align: left;
+}
+
+.button div span:nth-child(2) {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  text-align: left;
+}
+
+.footerInfo {
+  margin: 4rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footerInfo .logo {
+  margin-bottom: 3.2rem;
+}
+
+.footerInfo .links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footerInfo .links a {
+  margin: 1rem 1.6rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-weight: 500;
+  color: var(--grey-24);
+  text-decoration: none;
+}
+
+.footerInfo .social {
+  margin-top: 2.4rem;
+}
+
+.footerInfo .social > a:not(:last-of-type) {
+  margin-right: 1.6rem;
+}
+
+.divider {
+  height: 1px;
+  background: var(--grey-88);
+}
+
+.copyright {
+  margin: 2.4rem 0;
+  font-size: 1.2rem;
+  color: var(--grey-24);
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}

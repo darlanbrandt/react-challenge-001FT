@@ -1,11 +1,14 @@
 import React from 'react';
+import css from 'components/styles/Form.module.css';
 
 export default function Form() {
   return (
-    <div>
+    <div className={css.form}>
       <form action>
-        <input type="text" name="" id="" placeholder="Your name" />
-        <input type="text" name="" id="" placeholder="Your email" />
+        <div className={css.inputFields}>
+          <input type="text" name="" id="" placeholder="Your name" />
+          <input type="text" name="" id="" placeholder="Your email" />
+        </div>
         <button type="button" class="button">
           Send
         </button>
