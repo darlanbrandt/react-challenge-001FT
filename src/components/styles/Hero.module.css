@@ -11,7 +11,7 @@
   background-blend-mode: overlay;
   position: relative;
   z-index: -1;
-  margin-top: -5rem;
+  margin-top: -4rem;
 }
 
 .text {
@@ -38,6 +38,8 @@
 }
 
 .play {
+  display: flex;
+  justify-content: center;
   margin-top: 6rem;
 }
 
@@ -59,6 +61,31 @@
 @media only screen and (min-width: 900px) {
   .hero {
     height: 67vh;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+  }
+
+  .text {
+    margin-left: 12.8rem;
+    text-align: left;
+  }
+
+  .text h1 {
+    font-size: 4rem;
+    line-height: 4.8rem;
+  }
+
+  .text p {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
+
+  .play {
+    justify-content: left;
+  }
+
+  .image {
+    display: block;
   }
   
 }

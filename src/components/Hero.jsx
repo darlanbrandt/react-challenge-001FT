@@ -1,5 +1,6 @@
 import React from 'react';
 import playButton from 'assets/play-button.svg';
+import heroImg from 'assets/Hero/hero-image.png';
 import css from 'components/styles/Hero.module.css';
 
 export default function Hero() {
@@ -22,7 +23,7 @@ export default function Hero() {
           </div>
         </div>
         <div className={css.image}>
-          <img src="" alt="" />
+          <img src={heroImg} alt="" />
         </div>
       </div>
     </>
