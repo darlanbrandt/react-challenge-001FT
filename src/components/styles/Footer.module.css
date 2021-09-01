@@ -43,6 +43,7 @@
   border-radius: 0.4rem;
   cursor: pointer;
   color: white;
+  align-self: center;
 }
 
 .button div {
@@ -55,11 +56,13 @@
 .button div span:nth-child(1) {
   font-size: 1.6rem;
   line-height: 2.8rem;
+  text-align: left;
 }
 
 .button div span:nth-child(2) {
   font-size: 1.2rem;
   line-height: 1.6rem;
+  text-align: left;
 }
 
 .footerInfo {
