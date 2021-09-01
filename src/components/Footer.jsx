@@ -19,9 +19,7 @@ export default function Footer() {
             <span>Takes less than 5 minutes</span>
           </div>
         </button>
-        <a href="#">
-          Or browse local nanny-shares
-        </a>
+        <a href="#">Or browse local nanny-shares</a>
         <section className={css.footerInfo}>
           <div className={css.logo}>
             <img src={hapuLogo} alt="Hapu logo" />

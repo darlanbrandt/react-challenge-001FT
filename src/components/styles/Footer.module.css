@@ -10,6 +10,7 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  color: var(--grey-24);
 }
 
 .container h3 {
@@ -111,4 +112,48 @@
   color: var(--grey-24);
   mix-blend-mode: normal;
   opacity: 0.6;
+}
+
+@media only screen and (min-width: 900px) {
+  .footer {
+    padding-top: 8rem;
+  }
+
+  .container {
+    align-items: center;
+  }
+
+  .container h3 {
+    font-size: 2.8rem;
+    font-weight: 500;
+    line-height: 3.2rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .container p {
+    font-size: 1.8rem;
+  }
+
+  .container a {
+    margin-bottom: 1.6rem;
+  }
+
+  .footerInfo {
+    display: grid;
+    width: 80%;
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+
+  .footerInfo .logo {
+    margin-bottom: 0rem;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .footerInfo .social {
+    margin-top: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+
 }
