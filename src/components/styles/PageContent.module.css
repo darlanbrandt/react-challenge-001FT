@@ -48,3 +48,71 @@
   background: var(--grey-88);
   margin: 0 1.6rem;
 }
+
+@media only screen and (min-width: 900px) {
+  .section  {
+    margin: auto;
+    max-width: 100rem;
+  }
+  
+  .sectionTitle {
+    font-size: 2.8rem;
+    line-height: 3.2rem;
+    margin-bottom: 4rem;
+  }
+
+  .section.section1 .container,
+  .section.section3 .container {
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .section.section1 .text {
+    order: 0;
+    padding-right: 5.2rem;
+  }
+
+  .section.section1 .image {
+    order: 1;
+  }
+
+  .section.section1 .sectionTitle {
+    width: 70%;
+    min-width: 70%;
+  }
+
+  .section.section1, 
+  .section.section3  {
+    text-align: left;
+  }
+
+  .section.section2 .sectionTitle {
+    margin-bottom: 1.6rem;
+  }
+
+  .section.section3 .image {
+    padding-right: 4.4rem;
+  }
+
+  .section.section4 .text {
+    margin-bottom: 6.4rem;
+  }
+
+  .section.section4 .text p,
+  .section.section5 .text p {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  .hidden {
+    display: block;
+  }
+
+  .divider {
+    margin: auto;
+    max-width: 80rem;
+  }
+}
