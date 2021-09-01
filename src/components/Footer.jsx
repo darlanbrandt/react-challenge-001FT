@@ -1,10 +1,10 @@
 import React from 'react';
 import css from 'components/styles/Footer.module.css';
-import calendarImg from 'assets/calendar.svg';
-import hapuLogo from 'assets/hapu-logo.svg';
-import facebookLogo from 'assets/facebook-logo.svg';
-import instagramLogo from 'assets/instagram-logo.svg';
-import twitterLogo from 'assets/twitter-logo.svg';
+import calendarImg from 'assets/Footer/calendar.svg';
+import hapuLogo from 'assets/Footer/hapu-logo.svg';
+import facebookLogo from 'assets/Footer/facebook-logo.svg';
+import instagramLogo from 'assets/Footer/instagram-logo.svg';
+import twitterLogo from 'assets/Footer/twitter-logo.svg';
 
 export default function Footer() {
   return (

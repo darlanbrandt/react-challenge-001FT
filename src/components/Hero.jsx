@@ -1,6 +1,6 @@
 import React from 'react';
-import playButton from 'assets/play-button.svg';
 import heroImg from 'assets/Hero/hero-image.png';
+import playButton from 'assets/Hero/play-button.svg';
 import css from 'components/styles/Hero.module.css';
 
 export default function Hero() {
