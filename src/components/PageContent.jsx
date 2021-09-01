@@ -1,10 +1,10 @@
 import React from 'react';
 import Form from 'components/Form';
 import css from 'components/styles/PageContent.module.css';
-import section1Img from 'assets/section1-image.png';
-import section3Img from 'assets/section3-image.png';
-import section4Img from 'assets/section4-image.png';
-import section5Img from 'assets/section5-image.png';
+import section1Img from 'assets/PageContent/section1-image.png';
+import section3Img from 'assets/PageContent/section3-image.png';
+import section4Img from 'assets/PageContent/section4-image.png';
+import section5Img from 'assets/PageContent/section5-image.png';
 
 export default function PageContent() {
   return (
