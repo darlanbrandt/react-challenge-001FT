@@ -1,7 +1,7 @@
 import React from 'react';
 import NavigationItems from 'components/NavigationItems';
 import css from 'components/styles/Header.module.css';
-import badge from 'assets/badge.svg';
+import badge from 'assets/Header/badge.svg';
 
 export default function Header() {
   return (
