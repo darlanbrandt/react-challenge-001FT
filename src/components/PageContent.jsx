@@ -9,7 +9,7 @@ import section5Img from 'assets/PageContent/section5-image.png';
 export default function PageContent() {
   return (
     <main>
-      <section className={css.section} id="section1">
+      <section className={`${css.section} ${css.section1}`} id="section1">
         <div className={css.container}>
           <div className={css.image}>
             <img src={section1Img} alt="Section 1 image" />
@@ -33,7 +33,7 @@ export default function PageContent() {
         </div>
       </section>
       <div className={css.divider}></div>
-      <section className={css.section} id="section2">
+      <section className={`${css.section} ${css.section2}`} id="section2">
         <div className={css.container}>
           <div className={css.text}>
             <h3 className={css.sectionTitle}>
@@ -48,9 +48,11 @@ export default function PageContent() {
         </div>
       </section>
       <div className={css.divider}></div>
-      <section className={css.section} id="section3">
+      <section className={`${css.section} ${css.section3}`} id="section3">
         <div className={css.container}>
-          <img src={section3Img} alt="Section 3 image" />
+          <div className={css.image}>
+            <img src={section3Img} alt="Section 3 image" />
+          </div>
           <div className={css.text}>
             <h3 className={css.sectionTitle}>Shared payments made simple</h3>
             <p>
@@ -67,7 +69,7 @@ export default function PageContent() {
         </div>
       </section>
       <div className={css.divider}></div>
-      <section className={css.section} id="section4">
+      <section className={`${css.section} ${css.section4}`} id="section4">
         <div className={css.container}>
           <div className={css.text}>
             <h3 className={css.sectionTitle}>
@@ -90,7 +92,7 @@ export default function PageContent() {
         </div>
       </section>
       <div className={css.divider}></div>
-      <section className={css.section} id="section5">
+      <section className={`${css.section} ${css.section5}`} id="section5">
         <div className={css.container}>
           <img src={section5Img} alt="Section 5 image" />
           <div className={css.text}>
