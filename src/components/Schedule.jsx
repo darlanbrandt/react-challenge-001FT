@@ -2,6 +2,7 @@ import React from 'react';
 import css from 'components/styles/Schedule.module.css';
 import profileImage from 'assets/Schedule/profile-image.png';
 
+
 export default function Schedule() {
   return (
     <>
