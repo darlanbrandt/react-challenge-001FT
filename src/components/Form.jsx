@@ -1,14 +1,38 @@
 import React, { useState } from 'react';
 import api from 'services/api';
 import css from 'components/styles/Form.module.css';
+import Loading from './Loading';
 
 export default function Form() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [isError, setIsError] = useState(false);
+  const [data, setData] = useState('');
+  let formMessage = '';
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    console.log(name);
+    setLoading(true);
+    setIsError(false);
+    const formData = {
+      name: name,
+      email: email,
+    };
+    await api
+      .post('challenge-newsletter/', formData)
+      .then((res) => {
+        setData(res.data);
+        setName('');
+        setEmail('');
+        setLoading(false);
+        formMessage = 'You successfully subscribed to our newsletter';
+      })
+      .catch((err) => {
+        setLoading(false);
+        setIsError(true);
+        formMessage = 'There was an error. Please try again';
+      });
   };
 
   return (
@@ -38,8 +62,8 @@ export default function Form() {
             onChange={(e) => setEmail(e.target.value)}
           />
         </div>
-        <button type="submit" className={css.button}>
-          Send
+        <button type="submit" className={css.button} disabled={loading}>
+          {loading ? <Loading /> : 'Send'}
         </button>
       </form>
     </div>
