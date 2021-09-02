@@ -1,4 +1,5 @@
 import React from 'react';
+import heroImg from 'assets/Hero/hero-image.png';
 import playButton from 'assets/Hero/play-button.svg';
 import css from 'components/styles/Hero.module.css';
 
@@ -14,7 +15,7 @@ export default function Hero() {
               and create new flexible, affordable solutions in childcare.
             </p>
             <div className={css.play}>
-              <a href="#">
+              <a href="#1">
                 <img src={playButton} alt="Play button" />
                 <span>See hapu in action (27 seconds)</span>
               </a>
@@ -22,7 +23,7 @@ export default function Hero() {
           </div>
         </div>
         <div className={css.image}>
-          <img src="" alt="" />
+          <img src={heroImg} alt="Hapu nanny share" />
         </div>
       </div>
     </>
