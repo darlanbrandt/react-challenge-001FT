@@ -1,0 +1,80 @@
+.content {
+  padding: 1.1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: var(--body-text);
+  line-height: 2.8rem;
+}
+
+.content span {
+  text-align: center;
+  margin-right: 1rem;
+}
+
+.success {
+  background-color: #d2f7dc;
+  border: 1px solid #33cc5c;
+  border-radius: 0.4rem;
+  width: 100%;
+}
+
+.success .close {
+  text-decoration: none;
+  color: #33cc5c;
+  font-size: 2.2rem;
+  line-height: 2.8rem;
+}
+
+.error {
+  background-color: #f2d8d8;
+  border: 1px solid #ed7979;
+  border-radius: 0.4rem;
+  width: 100%;
+}
+
+.error .close {
+  text-decoration: none;
+  color: #ed7979;
+  font-size: 2.2rem;
+  line-height: 2.8rem;
+}
+
+.modalOverlay {
+  background: rgba(0,0,0,0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background: var(--white);
+  border-radius: 0.4rem;
+  padding: 1rem 1rem;
+  width: 100%;
+  max-width: 40rem;
+  height: 10rem;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 900px) {
+  .modal {
+    max-width: 80rem;
+    height: 8rem;
+  }
+
+  .content span {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+}
