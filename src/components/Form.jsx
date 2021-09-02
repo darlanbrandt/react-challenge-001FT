@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ResultModal from 'components/ResultModal';
 import api from 'services/api';
 import css from 'components/styles/Form.module.css';
 import Loading from './Loading';
@@ -8,31 +9,68 @@ export default function Form() {
   const [email, setEmail] = useState('');
   const [loading, setLoading] = useState(false);
   const [isError, setIsError] = useState(false);
-  const [data, setData] = useState('');
-  let formMessage = '';
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [resultMessage, setResultMessage] = useState('');
+
+  let errorMessage =
+    'There was an error while submitting the form. Please, try again.';
+  let error = false;
+
+  function handleCloseModal() {
+    setIsModalOpen(false);
+  }
+
+  function validateEmail(email) {
+    const regex = /\S+@\S+\.\S+/;
+    return regex.test(email);
+  }
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    if (!name.trim() && !email.trim()) {
+      errorMessage = 'Please fill all the fields.';
+      error = true;
+    } else if (!name.trim()) {
+      errorMessage = 'Please enter a valid name.';
+      error = true;
+    } else if (!email.trim()) {
+      errorMessage = 'Please enter a valid e-mail';
+      error = true;
+    } else if (email.trim()) {
+      if (!validateEmail(email)) {
+        errorMessage = 'Please enter a valid e-mail.';
+        error = true;
+      }
+    }
+
     setLoading(true);
     setIsError(false);
     const formData = {
       name: name,
       email: email,
     };
-    await api
-      .post('challenge-newsletter/', formData)
-      .then((res) => {
-        setData(res.data);
-        setName('');
-        setEmail('');
-        setLoading(false);
-        formMessage = 'You successfully subscribed to our newsletter';
-      })
-      .catch((err) => {
-        setLoading(false);
-        setIsError(true);
-        formMessage = 'There was an error. Please try again';
-      });
+    if (!error) {
+      await api
+        .post('challenge-newsletter/', formData)
+        .then((res) => {
+          setName('');
+          setEmail('');
+          setLoading(false);
+          setIsModalOpen(true);
+          setResultMessage('You successfully subscribed to our newsletter.');
+        })
+        .catch((err) => {
+          setLoading(false);
+          setIsError(true);
+          setIsModalOpen(true);
+          setResultMessage(errorMessage);
+        });
+    } else {
+      setIsError(true);
+      setLoading(false);
+      setIsModalOpen(true);
+      setResultMessage(errorMessage);
+    }
   };
 
   return (
@@ -66,6 +104,12 @@ export default function Form() {
           {loading ? <Loading /> : 'Send'}
         </button>
       </form>
+      <ResultModal
+        isOpen={isModalOpen}
+        onRequestClose={handleCloseModal}
+        isError={isError}
+        resultMessage={resultMessage}
+      />
     </div>
   );
 }
