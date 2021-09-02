@@ -30,18 +30,15 @@ html {
 }
 
 body {
-  font-family: var(--body-font);
+  --webkit-font-smoothing: antialiased;
   background-color: var(--background);
 }
 
-@media (min-width: 1366px) {
-  html {
-    font-size: 68.75%;
-  }
+body, input, textarea, button {
+  font-family: var(--body-font);
+  font-size: clamp(14px, 1.6rem, 2vw);
 }
 
-@media (min-width: 1920px) {
-  html {
-    font-size: 75%;
-  }
+a {
+  color: var(--brand-color-secondary);
 }
