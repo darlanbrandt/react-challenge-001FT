@@ -1,7 +1,7 @@
 import React from 'react';
+import css from 'components/styles/Hero.module.css';
 import heroImg from 'assets/Hero/hero-image.png';
 import playButton from 'assets/Hero/play-button.svg';
-import css from 'components/styles/Hero.module.css';
 
 export default function Hero() {
   return (

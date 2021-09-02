@@ -1,12 +1,11 @@
 import React from 'react';
-import Form from 'components/Form';
 import css from 'components/styles/PageContent.module.css';
 import section1Img from 'assets/PageContent/section1-image.png';
 import section3Img from 'assets/PageContent/section3-image.png';
 import section4Img from 'assets/PageContent/section4-image.png';
 import section5Img from 'assets/PageContent/section5-image.png';
 
-export default function PageContent() {
+export default function PageContent({ children }) {
   return (
     <main>
       <section className={`${css.section} ${css.section1}`} id="section1">
@@ -44,7 +43,7 @@ export default function PageContent() {
               share becomes available in your area!
             </p>
           </div>
-          <Form />
+          {children}
         </div>
       </section>
       <div className={css.divider}></div>

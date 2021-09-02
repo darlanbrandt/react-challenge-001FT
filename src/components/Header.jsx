@@ -1,9 +1,8 @@
 import React from 'react';
-import NavigationItems from 'components/NavigationItems';
 import css from 'components/styles/Header.module.css';
 import badge from 'assets/Header/badge.svg';
 
-export default function Header() {
+export default function Header({ children }) {
   return (
     <>
       <header className={css.header}>
@@ -11,9 +10,7 @@ export default function Header() {
           <div className={css.badge}>
             <img src={badge} alt="Hapu Badge" />
           </div>
-          <div className={css.navbar}>
-            <NavigationItems />
-          </div>
+          <div className={css.navbar}>{children}</div>
         </section>
         <div className={css.userLogin}>
           <a href="#1" className={css.button}>

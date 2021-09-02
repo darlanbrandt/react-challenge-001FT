@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import ResultModal from 'components/ResultModal';
 import api from 'services/api';
+import ResultModal from 'components/ResultModal';
+import Loading from 'components/Loading';
 import css from 'components/styles/Form.module.css';
-import Loading from './Loading';
 
 export default function Form() {
   const [name, setName] = useState('');
