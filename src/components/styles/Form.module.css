@@ -36,6 +36,56 @@
   filter: brightness(0.9);
 }
 
+/* ==== Hide label on page ==== */
+.scrOnly {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: rect(0,0,0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* ==== Spinner for loading form response ==== */
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 
 @media only screen and (min-width: 900px) {
   .container {
@@ -51,14 +101,15 @@
     margin: 0;
   }
 
-  .form input[type='text'] {
+  .form input[type='text'],
+  .form input[type='email']  {
     width: auto;
     height: 4.8rem;
     border-radius: 0.4rem;
     margin: 0 1.2rem 0 0;
   }
 
-  .form button {
+  .form .button {
     width: 9rem;
     height: 4.8rem;
     font-size: 1.4rem;
