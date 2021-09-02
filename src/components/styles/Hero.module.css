@@ -11,7 +11,7 @@
   background-blend-mode: overlay;
   position: relative;
   z-index: -1;
-  margin-top: -5rem;
+  margin-top: -4rem;
 }
 
 .text {
@@ -60,8 +60,8 @@
 
 @media only screen and (min-width: 900px) {
   .hero {
-    height: 67vh;
-    grid-template-columns: 50% 50%;
+    height: 68vh;
+    grid-template-columns: 45% 55%;
     justify-items: center;
   }
 
