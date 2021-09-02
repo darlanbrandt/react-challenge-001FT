@@ -11,15 +11,15 @@ export default function Header() {
           <div className={css.badge}>
             <img src={badge} alt="Hapu Badge" />
           </div>
-          <div class={css.navbar}>
+          <div className={css.navbar}>
             <NavigationItems />
           </div>
         </section>
         <div className={css.userLogin}>
-          <a href="#" className={css.button}>
+          <a href="#1" className={css.button}>
             Become a Nanny Share Host
           </a>
-          <a href="#" class={css.signin}>
+          <a href="#2" className={css.signin}>
             Sign In
           </a>
         </div>

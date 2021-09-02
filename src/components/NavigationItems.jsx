@@ -3,16 +3,16 @@ import css from 'components/styles/NavigationItems.module.css';
 
 export default function NavigationItems() {
   return (
-    <nav class={css.navbar}>
+    <nav className={css.navbar}>
       <ul>
         <li>
-          <a href="#">Create Your Nanny Share</a>
+          <a href="#1">Create Your Nanny Share</a>
         </li>
         <li>
-          <a href="#">Browse Shares</a>
+          <a href="#2">Browse Shares</a>
         </li>
         <li>
-          <a href="#">Our Story</a>
+          <a href="#3">Our Story</a>
         </li>
       </ul>
     </nav>

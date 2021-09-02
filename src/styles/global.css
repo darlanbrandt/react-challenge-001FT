@@ -38,3 +38,7 @@ body, input, textarea, button {
   font-family: var(--body-font);
   font-size: clamp(14px, 1.6rem, 2vw);
 }
+
+a {
+  color: var(--brand-color-secondary);
+}

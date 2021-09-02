@@ -19,28 +19,26 @@ export default function Footer() {
             <span>Takes less than 5 minutes</span>
           </div>
         </button>
-        <a href="#">
-          Or browse local nanny-shares
-        </a>
+        <a href="#1">Or browse local nanny-shares</a>
         <section className={css.footerInfo}>
           <div className={css.logo}>
             <img src={hapuLogo} alt="Hapu logo" />
           </div>
           <div className={css.links}>
-            <a href="#">Share Your Nanny</a>
-            <a href="#">Our Story</a>
-            <a href="#">Blog</a>
-            <a href="#">Terms & Privacy</a>
+            <a href="#2">Share Your Nanny</a>
+            <a href="#3">Our Story</a>
+            <a href="#3">Blog</a>
+            <a href="#4">Terms & Privacy</a>
           </div>
           <div className={css.social}>
             <a href="http://www.facebook.com">
-              <img src={facebookLogo} alt="" />
+              <img src={facebookLogo} alt="Facebook logo" />
             </a>
             <a href="http://www.twitter.com">
-              <img src={twitterLogo} alt="" />
+              <img src={twitterLogo} alt="Twitter logo" />
             </a>
             <a href="http://www.instagram.com">
-              <img src={instagramLogo} alt="" />
+              <img src={instagramLogo} alt="Instagram logo" />
             </a>
           </div>
         </section>
