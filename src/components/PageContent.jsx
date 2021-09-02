@@ -12,7 +12,7 @@ export default function PageContent() {
       <section className={`${css.section} ${css.section1}`} id="section1">
         <div className={css.container}>
           <div className={css.image}>
-            <img src={section1Img} alt="Section 1 image" />
+            <img src={section1Img} alt="Hapu's nanny share screenshot" />
           </div>
           <div className={css.text}>
             <h3 className={css.sectionTitle}>
@@ -22,13 +22,13 @@ export default function PageContent() {
               You have a fantastic home, a fantastic nanny and wouldn’t cutting
               your costs in half be, well, fantastic?! If only it was easy to
               connect with other parents to share your costs? Well now it is,
-              with Hapu. <a href="#">Hapu means tribe</a> and it’s our
+              with Hapu. <a href="#1">Hapu means tribe</a> and it’s our
               foundational 3 tribal principles that empowers you to create and
               manage your own tribe. A tribe that together has the power to
               create new affordable solutions in childcare that work for you and
               your community.
             </p>
-            <a href="#">Ready to get started?</a>
+            <a href="#2">Ready to get started?</a>
           </div>
         </div>
       </section>
@@ -51,7 +51,7 @@ export default function PageContent() {
       <section className={`${css.section} ${css.section3}`} id="section3">
         <div className={css.container}>
           <div className={css.image}>
-            <img src={section3Img} alt="Section 3 image" />
+            <img src={section3Img} alt="Hapu's payment screenshot" />
           </div>
           <div className={css.text}>
             <h3 className={css.sectionTitle}>Shared payments made simple</h3>
@@ -62,7 +62,7 @@ export default function PageContent() {
               our automated payment system takes care of the rest. You need
               never talk money or who owes what.
             </p>
-            <a href="#" class="link">
+            <a href="#3" className={css.link}>
               Read how Bridget’s share (without Hapu) ended over $15
             </a>
           </div>
@@ -82,19 +82,19 @@ export default function PageContent() {
               clearly defined process, transparency over money and equality of
               participation.
             </p>
-            <a href="" class="link">
+            <a href="#3" className={css.link}>
               Read how Hapu’s tribal background defines our app{' '}
             </a>
           </div>
           <div className={`${css.image} ${css.hidden}`}>
-            <img src={section4Img} alt="Section 4 image" />
+            <img src={section4Img} alt="Hapu's billing history screenshot" />
           </div>
         </div>
       </section>
       <div className={css.divider}></div>
       <section className={`${css.section} ${css.section5}`} id="section5">
         <div className={css.container}>
-          <img src={section5Img} alt="Section 5 image" />
+          <img src={section5Img} alt="Hapu's coming features" />
           <div className={css.text}>
             <h3 className={css.sectionTitle}>
               Coming soon: Nanny Share Daily Diary!

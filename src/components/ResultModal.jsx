@@ -18,9 +18,9 @@ export default function ResultModal({
       <div className={isError ? css.error : css.success}>
         <div className={css.content}>
           <span>{resultMessage}</span>
-          <a href="#" onClick={onRequestClose} className={css.close}>
+          <button onClick={onRequestClose} className={css.close}>
             ✖
-          </a>
+          </button>
         </div>
       </div>
     </Modal>
